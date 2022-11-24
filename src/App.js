@@ -34,30 +34,13 @@ function App() {
 
 export default App;
 */
-import { Routes, Route} from "react-router-dom";
-import AuthLayout from "./auth/AuthLayout";
-import Login from "./auth/Login";
-import PrivateRoute from "./components2/PrivateRoute";
-import Home from "./Pages/Home";
-import Profile from "./Pages/Profile";
+import {useRoutes} from "react-router-dom";
+import routes from "./routes/routes"
 
 
 function App() {
 
-  return (
-   <>
-   <div>
-    <a href="/profile"> profile</a>
-   </div>
-   <Routes>
-    <Route path="/" element={<Home/>}/>
-    <Route path="/auth" element={<AuthLayout/>}>
-      <Route path="login" element={<Login/>}/>
-    </Route>
-    <Route path="/profile" element={<PrivateRoute><Profile/></PrivateRoute>}/>
-   </Routes>
-   </>
-  );
+  return useRoutes(routes)
 }
 
 export default App;
