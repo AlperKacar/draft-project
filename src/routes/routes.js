@@ -5,6 +5,7 @@ import Home from "../Pages/Home"
 import Profile from "../Pages/Profile"
 import PrivateRoute from "../components2/PrivateRoute"
 import SingUp from "../singup/SingUp"
+import Contact from "../Pages/Contact"
 
 
 const routes = [
@@ -29,6 +30,10 @@ const routes = [
     {
         path: "/singup",
         element: <SingUp/>
+    },
+    {
+        path: "/contact",
+        element: <Contact/>
     }
 ]
 

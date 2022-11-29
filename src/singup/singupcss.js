@@ -95,22 +95,35 @@ padding: 50px;
 .input-tasarım{
     width: 100%;
     height: 50px;
-    padding: 10px 14px 0;
+    padding: 3px 18px 0 ;
     border: 1px solid #ccc;
     border-radius: 2px;
-    background: #fff;
-    outline: 0;
-    font-size: 14px;
-    font-weight: 500;
-    color: #333;
-    transition: border-color .2s;
-    appearance: none;
-    :focus{
+    outline: none;
+    :focus {
         border:solid 1px #438ed8 ;
         box-shadow: 0 0 3px 0 #438ed8;
     }
-}
+    :valid{
+    padding: 20px 43px 0 18px ;
 
+    }
+}
+.input-text{
+
+    position: absolute;
+    bottom: 15px;
+    left: 19px;
+    font-size: 15px;
+    color: #8e8e8e;
+    pointer-events: none;
+
+}
+.input-tasarım:valid + .input-text{
+    scale: 0.89;
+    transition: 350ms;
+    bottom: 27px;
+    translate: -5px;
+}
 .show-hide-trigger{
     position: absolute;
     width: 21px;
@@ -122,16 +135,51 @@ padding: 50px;
     -webkit-background-size: 21px 18px;
     -moz-background-size: 21px 18px;
     background-size: 21px 18px;
-    :focus{
-        background: url(https://s0.shbdn.com/assets/images/password_show:893e09be95762713a91c214a7514aacf.png) no-repeat;
+}
+.hide-show-trigger{
+    position: absolute;
+    width: 21px;
+    height: 18px;
+    display: block;
+    right: 16px;
+    top: 16px;
+    background: url(https://s0.shbdn.com/assets/images/password_show:893e09be95762713a91c214a7514aacf.png) no-repeat;
     -webkit-background-size: 21px 16px;
     -moz-background-size: 21px 16px;
     background-size: 21px 16px;
     top: 17px;
-    }
 }
 .label{
     position: absolute;
     top:17px;
+}
+.singupbutton{
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: lightyellow;
+    color: gray;
+    :enabled{
+        color: black;
+        background-color: yellow;
+        border: 1px solid #ccc;
+    border-radius: 5px;
+    }
+    :enabled:hover{
+        
+        box-shadow: 0 0 4px #7f8500;
+        
+    }
+}
+.cheachbox{
+    display: flex;
+    padding: 0 0 10px 0;
+
+}
+.cheachboxtext{
+    font-size: small;
+    margin-left: 10px;
+    pointer-events: none;
 }
 `
