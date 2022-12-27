@@ -33,7 +33,7 @@ export default function Input({label, type = 'text', ...props}) {
                        } 
                     </a>
                 )
-                }            
+                }        
             </div>
         </>
     )

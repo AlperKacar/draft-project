@@ -81,16 +81,20 @@ padding: 50px;
     background: url(https://s0.shbdn.com/assets/images/info@2x:3adb7367bc5fee3c69ca9f7085d58ff0.png);
     background-size: cover;
     z-index: 5;
+    
+   
 }
-.tipitip {
-    height: 70px;
-    left: 50px;
+.tipitip{
     display: none;
 }
-.tt-trigger:focus+.tipitip{
+.tt-trigger:hover + .tipitip{
     display: block;
-}
-
+    background-color: #7f8500;
+    width: 100px;
+    height: 100px;
+    font-size: x-small;
+    color: #438ed8;
+    }
 
 .input-tasarım{
     width: 100%;
