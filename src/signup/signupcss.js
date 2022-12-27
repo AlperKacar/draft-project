@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Singdiv = styled.div`
+export const Signdiv = styled.div`
 display: grid;
     place-items: center;
 height: 100%;
@@ -31,7 +31,7 @@ border: 1px solid #dedede;
 padding: 50px;
 
 
-.sing-up-form{
+.sign-up-form{
     font-family: "Avenir Next",sans-serif;
 }
 .h1{
@@ -157,7 +157,7 @@ padding: 50px;
     position: absolute;
     top:17px;
 }
-.singupbutton{
+.signupbutton{
     width: 100%;
     height: 40px;
     border: 1px solid #ccc;

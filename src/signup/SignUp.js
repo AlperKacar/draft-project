@@ -1,11 +1,11 @@
 import { useState } from "react"
 import Input from "../ComponentsSahibinden/Form/Input"
-import {Singdiv, Bodycontainer} from "./signupcss"
+import {Signdiv, Bodycontainer} from "./signupcss"
 import Checkbox from "../ComponentsSahibinden/Form/Checkbox"
 import Header from "../components/Header"
 
 
-function SingUp() {
+function SignUp() {
 
     const [name, setName] = useState('')
     const [surname, setSurname] = useState('')
@@ -15,10 +15,10 @@ function SingUp() {
 
     const enable = name && surname && eposta && password && checkbox
   return (
-        <Singdiv>
+        <Signdiv>
            <Header/>
         <Bodycontainer>
-            <div className='sing-up-form'>
+            <div className='sign-up-form'>
                 <form className='form-container'>
                     <div className='form-user-name'>
                         <div className='split-form'>
@@ -54,12 +54,12 @@ function SingUp() {
                     <div >
                     <Checkbox type="cheackbox" Cheackbox={setCheackbox} value={checkbox} onChange={e => setCheackbox(e.target.value)}  label="Kuralları kabul ediyorum"/>
                     </div>
-                    <button className="singupbutton" type="submit" disabled={!enable}><h3>Kaydol</h3></button>
+                    <button className="signupbutton" type="submit" disabled={!enable}><h3>Kaydol</h3></button>
                 </form>
             </div>  
         </Bodycontainer>
-    </Singdiv>
+    </Signdiv>
   )
 }
 
-export default SingUp
+export default SignUp

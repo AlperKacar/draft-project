@@ -4,7 +4,7 @@ import AuthLayout from "../auth/AuthLayout"
 import Home from "../Pages/Home"
 import Profile from "../Pages/Profile"
 import PrivateRoute from "../components2/PrivateRoute"
-import SingUp from "../singup/SingUp"
+import SignUp from "../signup/SignUp"
 import Contact from "../Pages/Contact"
 
 
@@ -28,8 +28,8 @@ const routes = [
         element: <PrivateRoute><Profile/></PrivateRoute>
     },
     {
-        path: "/singup",
-        element: <SingUp/>
+        path: "/signup",
+        element: <SignUp/>
     },
     {
         path: "/contact",

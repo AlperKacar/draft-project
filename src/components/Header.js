@@ -1,5 +1,5 @@
 import React from "react";
-import { Headercontainer } from "../singup/singupcss";
+import { Headercontainer } from "../signup/signupcss";
 
 
 const Header = () => {
