@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Signdiv = styled.div`
 display: grid;
     place-items: center;
+    flex-direction: column;
 height: 100%;
 
 `

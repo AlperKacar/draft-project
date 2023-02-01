@@ -6,6 +6,7 @@ import Profile from "../Pages/Profile"
 import PrivateRoute from "../components2/PrivateRoute"
 import SignUp from "../signup/SignUp"
 import Contact from "../Pages/Contact"
+import CrediCard from "../Credipage/CrediCard"
 
 
 const routes = [
@@ -34,6 +35,10 @@ const routes = [
     {
         path: "/contact",
         element: <Contact/>
+    },
+    {
+        path: "/odeme",
+        element: <CrediCard/>
     }
 ]
 

@@ -40,7 +40,7 @@ function SignUp() {
                                 <div  className="tipitip">E-posta adresiniz güncel olarak kullandığınız bir adres olmalı. Size özel fatura dahil tüm bilgilendirmeleri bu adresinize göndereceğiz.</div>
 
                                 </span>
-                                    <Input type="e-mail" value={eposta} label="Eposta" onChange={e => setEposta(e.target.value)}/>
+                                    <Input type="email" value={eposta} label="Eposta" onChange={e => setEposta(e.target.value)}/>
                                 </div>
                             </dd>
                         </dl>
@@ -56,7 +56,7 @@ function SignUp() {
                     </div>
                     <button className="signupbutton" type="submit" disabled={!enable}><h3>Kaydol</h3></button>
                 </form>
-            </div>  
+            </div>      
         </Bodycontainer>
     </Signdiv>
   )
